@@ -3,3 +3,7 @@ section{
     justify-content: space-around;
     flex-wrap: wrap;
 }
+section a{
+    text-decoration: none;
+
+}

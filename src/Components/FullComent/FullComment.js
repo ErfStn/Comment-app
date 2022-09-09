@@ -1,12 +1,18 @@
- import { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import "./fullComment.css";
+import { useNavigate, useParams } from "react-router-dom";
+
 import {
   deleteComment,
   getAllComments,
   getOneComment,
 } from "../../services/services";
-const FullComment = ({ commentId, setComments, setCommentID, comments }) => {
+const FullComment = () => {
   const [comment, setComment] = useState(null);
+  // const commentId=
+  const params = useParams();
+  const commentId = params.id;
+  const navigate = useNavigate();
 
   useEffect(() => {
     if (commentId) {
@@ -21,11 +27,11 @@ const FullComment = ({ commentId, setComments, setCommentID, comments }) => {
   const deleteHandler = async () => {
     try {
       await deleteComment(commentId);
-      const { data } = await getAllComments();
-      setComments(data);
-      setCommentID(null);
-      setComment(null);
-    } catch (error) {console.log(error);}
+      await getAllComments();
+      navigate("/");
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   let commentDetail = <p>Please select a comment!</p>;
