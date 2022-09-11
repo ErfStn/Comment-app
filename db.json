@@ -1,0 +1,25 @@
+{
+  "comments": [
+    {
+      "name": "Erfan Soltani ",
+      "email": "erfstn@gmail.com",
+      "body": "hello",
+      "postId": 10,
+      "id": 1
+    },
+    {
+      "name": "Saman Soltani ",
+      "email": "samsam@yahoo.com",
+      "body": "hello",
+      "postId": 10,
+      "id": 2
+    },
+    {
+      "name": "Alireza",
+      "email": "alireza@gmail.com",
+      "body": "ty",
+      "postId": 10,
+      "id": 3
+    }
+  ]
+}

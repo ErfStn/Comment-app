@@ -7,9 +7,10 @@ import {
   getAllComments,
   getOneComment,
 } from "../../services/services";
+
 const FullComment = () => {
   const [comment, setComment] = useState(null);
-  // const commentId=
+
   const params = useParams();
   const commentId = params.id;
   const navigate = useNavigate();

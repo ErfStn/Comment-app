@@ -4,9 +4,9 @@ import NewCommentPage from "./pages/NewCommentPage";
 import NotFound from "./pages/NotFound";
 
 const routes = [
-  { path: "/new-comment", element: <NewCommentPage /> },
-  { path: "/comment/:id", element: <FullComment /> },
-  { path: "/", element: <HomePage /> },
-  { path: "*", element: <NotFound /> },
+  { path: "/new-comment", element: <NewCommentPage />, id: 1 },
+  { path: "/comment/:id", element: <FullComment />, id: 2 },
+  { path: "/", element: <HomePage />, id: 3 },
+  { path: "*", element: <NotFound />, id: 4 },
 ];
 export default routes;
