@@ -1,43 +1,44 @@
-.newComment{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    border-radius: 5px;
-    background-color: #e0e7ff;
-    color: #4338ca;
-    width: 600px;
-    height: 300px;
+.newComment {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	border-radius: 5px;
+	background-color: #e0e7ff;
+	color: #4338ca;
+	width: 22rem;
+	height: 300px;
 }
-.formControl{
-    display: flex;
-    align-items: center;
+.formControl {
+	display: flex;
+	align-items: center;
 }
-.formControl label{
-    margin-right: 10px;
+.formControl label {
+	margin-right: 10px;
 }
-.formControl input{
-border-radius: 5px;
-padding: 5px 10px;
-outline: none;
-border: none;
-width: 200px;
+.formControl input {
+	border-radius: 5px;
+	padding: 5px 10px;
+	outline: none;
+	border: none;
+	width: 200px;
 }
-.formControl textarea{
-border-radius: 5px;
-padding: 5px 10px;
-outline: none;
-border: none;
-width: 200px;
-
+.formControl textarea {
+	border-radius: 5px;
+	padding: 5px 10px;
+	outline: none;
+	border: none;
+	min-width: 200px;
+	max-width: 200px;
+	max-height: 100px;
 }
-.newComment button{
-border-radius: 5px;
-padding: 5px 10px;
-outline: none;
-border: none;
-width: 100px;
-color: #e0e7ff;
-background-color: #4338ca;
-cursor: pointer;
+.newComment button {
+	border-radius: 5px;
+	padding: 5px 10px;
+	outline: none;
+	border: none;
+	width: 100px;
+	color: #e0e7ff;
+	background-color: #4338ca;
+	cursor: pointer;
 }
